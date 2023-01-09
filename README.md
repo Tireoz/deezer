@@ -31,7 +31,7 @@ const Discord = require("discord.js");
 const client = new Discord.Client();
 
 const { DisTube } = require("distube");
-const { DeezerPlugin } = require("@distube/deezer");
+const { DeezerPlugin } = require("@tireoz/deezer");
 const distube = new DisTube(client, {
   plugins: [new DeezerPlugin()],
 });
@@ -40,7 +40,8 @@ or
 
 ```ts
 import { Client } from "discord.js";
-import { DisTube, DeezerPlugin } from "@distube/deezer";
+import { DisTube } from "distube";
+import { DeezerPlugin } from "@tireoz/deezer";
 
 const client = new Client();
 const distube = new DisTube(client, {
